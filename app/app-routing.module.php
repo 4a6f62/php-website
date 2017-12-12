@@ -1,12 +1,16 @@
 <?php
-    require_once 'app/home/home.component.php';
+    require_once 'home/home.component.php';
+    require_once 'page/page.component.php';
+    require_once 'blog/blog.component.php';
+    require_once 'post/post.component.php';
 
     class appRouting
     {
         const routes = [
 			['\/', 'HomeComponent'],
-			['\/about', 'HomeComponent'],
-			['\/blog\/(.*)', 'HomeComponent'],
+			['\/about', 'PageComponent'],
+			['\/blog', 'BlogComponent'],
+			['\/blog\/(.*)', 'PostComponent'],
         ];
 
         public static function route()
