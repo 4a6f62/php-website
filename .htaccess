@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-l
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule !\.(jpg|gif|png|css|js|txt)$ ./index.php [L]
+
+</IfModule>
