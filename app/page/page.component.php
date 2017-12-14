@@ -13,6 +13,13 @@ class PageComponent extends Component
 
 		$page  = json_decode(Http::get($url));
 
+		if(!$page)
+		{
+			header("HTTP/1.0 404 Not Found");
+			$description = $title = '404';
+			return '<h1>Pagina niet gevonden.</h1>';
+		}
+
 		$title = $page->title;
 		$description = trim(strip_tags($page->description));
 		$keywords = trim(strip_tags($page->keywords));

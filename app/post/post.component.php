@@ -13,6 +13,13 @@ class PostComponent extends Component
 
 		$post = json_decode(Http::get($url));
 
+		if(!$post)
+		{
+			header("HTTP/1.0 404 Not Found");
+			$description = $title = '404';
+			return '<h1>Post niet gevonden.</h1>';
+		}
+
 		$title = $post->title;
 		$description = trim(strip_tags($post->shorttext));
 
