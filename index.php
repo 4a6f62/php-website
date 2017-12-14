@@ -1,6 +1,6 @@
 <?php require_once "app/app.module.php"; ?>
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <title><?=$title;?></title>
@@ -13,7 +13,16 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <app-root><?php Component:App($content); ?></app-root>
+  <app-root>
+      <nav>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
+      </nav>
+
+      <?php Component:App($content); ?>
+  </app-root>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

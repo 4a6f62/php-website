@@ -8,9 +8,9 @@
     {
         const routes = [
 			['\/', 'HomeComponent'],
-			['\/about', 'PageComponent'],
 			['\/blog', 'BlogComponent'],
 			['\/blog\/(.*)', 'PostComponent'],
+			['\/(.*)', 'PageComponent'],
         ];
 
         public static function route()

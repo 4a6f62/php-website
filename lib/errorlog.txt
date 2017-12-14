@@ -1,12 +1,10 @@
 *   Trying 195.211.72.35...
 * Connected to www.jobcastrop.nl (195.211.72.35) port 443 (#0)
-* ALPN, offering http/1.1
 * Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
 * successfully set certificate verify locations:
 *   CAfile: C:\wamp\www\jobcastrop.php\lib/cacert.pem
   CApath: none
 * SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
-* ALPN, server accepted to use http/1.1
 * Server certificate:
 *  subject: OU=Domain Control Validated; OU=EssentialSSL; CN=jobcastrop.nl
 *  start date: Jan 12 00:00:00 2017 GMT
@@ -20,13 +18,13 @@ Accept: */*
 Accept-Encoding: UTF-8
 
 < HTTP/1.1 200 OK
-< Date: Tue, 12 Dec 2017 16:12:59 GMT
+< Date: Thu, 14 Dec 2017 10:16:45 GMT
 < Server: Apache
 < Access-Control-Allow-Origin: *
 < Upgrade: h2c
 < Connection: Upgrade
 < Cache-Control: max-age=31536000
-< Expires: Wed, 12 Dec 2018 16:12:59 GMT
+< Expires: Fri, 14 Dec 2018 10:16:45 GMT
 < Vary: Accept-Encoding,User-Agent
 < X-Powered-By: Job Castrop/0.0.1
 < Transfer-Encoding: chunked

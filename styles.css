@@ -55,9 +55,10 @@ a {
     color: #9CDCFE;
 }
 
-div.app
+app-root
 {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    display: block;
 }
