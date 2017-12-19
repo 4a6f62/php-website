@@ -14,6 +14,7 @@ class BlogComponent extends Component
 		$posts = json_decode(Http::get($url), true);
 		$description = $title = 'Blog posts';
 
+		$contents = '';
 		foreach ($posts as $index => $post)
 		{
 			ob_start();
